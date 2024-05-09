@@ -14,18 +14,57 @@ body {
 }
 
 .header {
+  .menu {
+    position: absolute;
+    width: 390px;
+    height: 844px;
+    background-color: #686e5d;
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    color: #eef0eb;
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+      .menu {
+        background-color: transparent;
+      }
+    }
+
+    .show {
+      display: flex;
+    }
+  }
+  .showmore {
+    display: flex;
+    position: relative;
+    padding: 6px;
+    @media screen and (min-width: 768px) {
+      .showmore {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  .menu-about {
+    margin-top: 100px;
+  }
   .name {
     width: 281px;
     height: 88px;
     color: #686e5d;
     font-size: 36px;
     font-weight: 400;
+    margin-left: 30px;
   }
   .graphic-web {
     width: 292px;
     height: 99px;
     font-size: 40px;
     font-weight: 400;
+    margin-left: 73px;
   }
   .graphic {
     font-family: pt-serif;
@@ -34,8 +73,80 @@ body {
     font-weight: 400;
   }
   .link {
+    font-size: 20px;
     padding: 8px 16px 8px 16px;
     border-radius: 70px;
     border: 1.5px solid #1f1c1b;
+    display: flex;
+    flex-direction: column;
+  }
+  .linkedin {
+    width: 124px;
+    margin-left: 44px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .instagram {
+    width: 149px;
+    margin-left: 195px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+  }
+  .behance {
+    width: 127px;
+    margin-left: 73px;
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+  }
+}
+.main {
+  margin-top: 70px;
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  .about-button {
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    width: 108px;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 70px;
+    background-color: #686e5d;
+    color: #eef0eb;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutme {
+    font-size: 20px;
+    width: 337px;
+    height: 385px;
+    letter-spacing: 3%;
+    line-height: 2.2;
+    text-align: center;
+  }
+  .img-1 {
+    border-radius: 60px 15px 60px 15px;
+    border: solid 1.5px #1f1c1b;
+    margin-top: -60px;
+  }
+  .img-2 {
+    border-radius: 60px 15px 15px 15px;
+    border: solid 1.5px #1f1c1b;
+    margin-left: 169px;
+    margin-top: -66px;
+  }
+  .img-3 {
+    border-radius: 15px 60px 15px 60px;
+    border: solid 1.5px #1f1c1b;
+  }
+  .img-3 {
+    border-radius: 15px 60px 15px 60px;
+    border: solid 1.5px #1f1c1b;
+    margin-left: 37px;
+    margin-top: 22px;
   }
 }
