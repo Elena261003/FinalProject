@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +14,9 @@ body {
   height: 54px;
   position: absolute;
   top: 0px;
+  @include responsive (desktop){
+width: 1440px;
+  }
 }
 .nav {
   position: relative;
@@ -31,7 +36,7 @@ body {
     margin-left: 30px;
   }
   .graphic-web {
-    font-family:"pt serif", serif;
+    font-family:"montserrat", serif;
     width: 292px;
     height: 99px;
     font-size: 40px;
@@ -72,6 +77,63 @@ body {
     margin-top: 27px;
     display: flex;
     align-items: center;
+  }
+  @include responsive (desktop){
+    .menu-about {
+      margin-top: 100px;
+    }
+    .name {
+      width: 869px;
+      height: 157px;
+      color: #686e5d;
+      font-size: 96px;
+      font-weight: 400;
+      margin-left: 167px;
+    }
+    .graphic-web {
+      font-family:"montserrat", serif;
+      width: 690px;
+      height: 219px;
+      font-size: 96px;
+      font-weight: 400;
+      margin-left: 581px;
+    }
+    .graphic {
+      width: 500px;
+      font-family:"pt serif", serif;
+      font-style: italic;
+      font-size: 96px;
+      font-weight: 400;
+    }
+    .link {
+      font-size: 30px;
+      padding: 16px 24px 16px 24px;
+      border-radius: 70px;
+      border: 2px solid #1f1c1b;
+      display: flex;
+      flex-direction: column;
+    }
+    .linkedin {
+      width: 185px;
+      margin-left:316px;
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+    }
+    .instagram {
+      width: 223px;
+      margin-left: 901px;
+      margin-top: -70px;
+      display: flex;
+      align-items: center;
+    }
+    .behance {
+      width: 191px;
+      margin-left: 624px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+    }
   }
 }
 .main {
@@ -137,21 +199,346 @@ body {
     font-size: 20px;
     font-weight: 400;
   }
+  .line{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-top:#1f1c1b solid 2px;
+    width: 328px;
+  }
+  .language{
+    font-family:"pt serif", sans-serif ;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .languagelist{
+    font-family: "montserrat";
+    font-size: 20px;
+    font-weight: 400;
+  }
+   
+  .portfolio-button{
+    font-family: "montserrat";
+    font-weight: 400;
+    font-size: 20px;
+    width: 145px;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 70px;
+    background-color: #686e5d;
+    color: #eef0eb;
+    display: flex;
+    justify-content: center;
+   }
+
+  .brandingflowery1mobile{
+    
+    width: 315px;
+    height: 315px;
+  }
+  .brandingflowery2mobile{
+    border-radius: 40px;
+    width: 315px;
+    height: 329px;
+    margin-top: 31px;
+    border:#1f1c1b solid 2px;
+  }
+  .year{
+    font-size: 20px;
+    margin-top: 24px;
+  }
+  .work{
+    font-size: 20px;
+  }
+  .lines{
+    border-top:#1f1c1b solid 2px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 250px;
+   
+  }
+  .brandingminimalmobile{
+    border-radius: 100px 30px 30px 30px;
+  }
+  .brandingmuse1mobile{
+    border-radius: 40px 40px 40px 140px;
+  }
+  .brandingmuse2mobile{
+    border-radius: 100px 25px 100px 25px;
+    border:#1f1c1b solid 2px;
+    margin-top: 15px;
+  }
+  .redesignspotify1mobile{
+    border-radius: 25px;
+    border:#1f1c1b solid 2px;
+    margin-bottom: 50px;
+  
+  }
+  .redesignspotify2mobile{
+    border-radius: 100px 25px 100px 25px;
+    border:#1f1c1b solid 2px;
+  }
+  .uxuiappmobile{
+    border-radius: 135px 25px 25px 25px;
+    border:#1f1c1b solid 2px;
+  }
+  .trifold1mobile{
+    border-radius: 25px 25px 25px 100px;
+    border:#1f1c1b solid 2px;
+    margin-bottom: 32px;
+  }
+  .trifold2mobile{
+    border-radius: 25px 70px 25px 150px;
+  }
+  .isometricamobile{
+    border-radius: 35px;
+    border:#1f1c1b solid 2px;
+  }
+  .start-text{
+    position: relative;
+    top: 30px;
+    color: #686e5d;
+    font-size: 15PX;
+  }
+  .contact{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    font-family:"pt serif", sans-serif  ;
+    font-size: 47px;
+    font-style: italic;
+    color: #686e5d;
+  }
+     }
+  @include responsive(desktop){
+    .main {
+      position: relative;
+      left: 173px;
+      margin-top: 70px;
+      width: 390px;
+      display: flex;
+      justify-content: center;
+      .about-button {
+       
+        font-family: "montserrat";
+        font-weight: 400;
+        font-size: 30px;
+        width: 153px;
+        height: 68px;
+        padding: 16px 24px 16px 24px;
+        border-radius: 70px;
+        background-color: #686e5d;
+        color: #eef0eb;
+        display: flex;
+        justify-content: center;
+      }
+      .aboutme {
+        font-size: 40px;
+        width: 418px;
+        height: 715px;
+        letter-spacing: 3%;
+        line-height: 2.2;
+        text-align: left;
+      }
+      .fotos{
+        position: relative;
+        top: -650px;
+      }
+      .img-1 {
+        margin-left: 963px;
+       
+        width: 299px;
+        height: 389px;
+        border-radius: 60px 15px 60px 15px;
+        border: solid 1.5px #1f1c1b;
+        margin-top: -60px;
+      }
+      .img-2 {
+        width: 301px;
+        height: 392px;
+        border-radius: 60px 15px 15px 15px;
+        border: solid 1.5px #1f1c1b;
+        margin-left: 169px;
+        margin-top: -66px;
+      }
+      .img-3 {
+        border-radius: 15px 60px 15px 60px;
+        border: solid 1.5px #1f1c1b;
+      }
+      .img-3 {
+        border-radius: 15px 60px 15px 60px;
+        border: solid 1.5px #1f1c1b;
+        margin-left: 37px;
+        margin-top: 22px;
+      }
+      .skill{
+        font-family:"pt serif", sans-serif ;
+        font-style: italic;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      .skilllist{
+        font-family: "montserrat";
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .line{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-top:#1f1c1b solid 2px;
+        width: 328px;
+      }
+      .language{
+        font-family:"pt serif", sans-serif ;
+        font-style: italic;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      .languagelist{
+        font-family: "montserrat";
+        font-size: 20px;
+        font-weight: 400;
+      }
+       
+      .portfolio-button{
+        font-family: "montserrat";
+        font-weight: 400;
+        font-size: 20px;
+        width: 145px;
+        height: 40px;
+        padding: 8px 16px 8px 16px;
+        border-radius: 70px;
+        background-color: #686e5d;
+        color: #eef0eb;
+        display: flex;
+        justify-content: center;
+       }
+    
+      .brandingflowery1mobile{
+        
+        width: 315px;
+        height: 315px;
+      }
+      .brandingflowery2mobile{
+        border-radius: 40px;
+        width: 315px;
+        height: 329px;
+        margin-top: 31px;
+        border:#1f1c1b solid 2px;
+      }
+      .year{
+        font-size: 20px;
+        margin-top: 24px;
+      }
+      .work{
+        font-size: 20px;
+      }
+      .lines{
+        border-top:#1f1c1b solid 2px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 250px;
+       
+      }
+      .brandingminimalmobile{
+        border-radius: 100px 30px 30px 30px;
+      }
+      .brandingmuse1mobile{
+        border-radius: 40px 40px 40px 140px;
+      }
+      .brandingmuse2mobile{
+        border-radius: 100px 25px 100px 25px;
+        border:#1f1c1b solid 2px;
+        margin-top: 15px;
+      }
+      .redesignspotify1mobile{
+        border-radius: 25px;
+        border:#1f1c1b solid 2px;
+        margin-bottom: 50px;
+      
+      }
+      .redesignspotify2mobile{
+        border-radius: 100px 25px 100px 25px;
+        border:#1f1c1b solid 2px;
+      }
+      .uxuiappmobile{
+        border-radius: 135px 25px 25px 25px;
+        border:#1f1c1b solid 2px;
+      }
+      .trifold1mobile{
+        border-radius: 25px 25px 25px 100px;
+        border:#1f1c1b solid 2px;
+        margin-bottom: 32px;
+      }
+      .trifold2mobile{
+        border-radius: 25px 70px 25px 150px;
+      }
+      .isometricamobile{
+        border-radius: 35px;
+        border:#1f1c1b solid 2px;
+      }
+      .start-text{
+        position: relative;
+        top: 30px;
+        color: #686e5d;
+        font-size: 15PX;
+      }
+      .contact{
+        position: relative;
+        top: 30px;
+        left: 30px;
+        font-family:"pt serif", sans-serif  ;
+        font-size: 47px;
+        font-style: italic;
+        color: #686e5d;
+      }
+  }
 }
-.line{
-  margin-top: 8px;
-  margin-bottom: 8px;
-  border-top:#1f1c1b solid 2px;
-  width: 328px;
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 135px;
+  width: 390px;
+  height: 708px;
+  background-color: #686e5d;
+
+  .avatar{
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+  }
+  .links-footer{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .links{
+    font-size: 16px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 70px;
+    border: 2px solid #eef0eb;
+    display: flex;
+    flex-direction: column;
+    color: #eef0eb;
+    margin: 24px;
+    text-align:center ;
+  }
+  .social-media{
+    color: #eef0eb;
+    font-size: 24px;
+  }
+  .mail{
+    color: #eef0eb;
+    font-size: 20px;
+  }
+  .message{
+    color: #eef0eb;
+    font-size: 24px;
+  }
 }
-.language{
-  font-family:"pt serif", sans-serif ;
-  font-style: italic;
-  font-size: 25px;
-  font-weight: 400;
-}
-.languagelist{
-  font-family: "montserrat";
-  font-size: 20px;
-  font-weight: 400;
-}
+
+
+
