@@ -14,7 +14,7 @@ body {
   height: 54px;
   position: absolute;
   top: 0px;
-  @include responsive (desktop){
+  @include responsive (laptop){
 width: 1440px;
   }
 }
@@ -78,9 +78,9 @@ width: 1440px;
     display: flex;
     align-items: center;
   }
-  @include responsive (desktop){
+  @include responsive (laptop){
     .menu-about {
-      margin-top: 100px;
+      margin-top: 60px;
     }
     .name {
       width: 869px;
@@ -176,7 +176,7 @@ width: 1440px;
     border-radius: 60px 15px 15px 15px;
     border: solid 1.5px #1f1c1b;
     margin-left: 169px;
-    margin-top: -66px;
+    margin-top: -90px;
   }
   .img-3 {
     border-radius: 15px 60px 15px 60px;
@@ -310,7 +310,7 @@ width: 1440px;
     color: #686e5d;
   }
      }
-  @include responsive(desktop){
+  @include responsive(laptop){
     .main {
       position: relative;
       left: 173px;
@@ -351,62 +351,75 @@ width: 1440px;
         height: 389px;
         border-radius: 60px 15px 60px 15px;
         border: solid 1.5px #1f1c1b;
-        margin-top: -60px;
+        margin-top: -160px;
       }
       .img-2 {
         width: 301px;
         height: 392px;
         border-radius: 60px 15px 15px 15px;
         border: solid 1.5px #1f1c1b;
-        margin-left: 169px;
-        margin-top: -66px;
+        margin-left: 623px;
+        margin-top: -100px;
       }
       .img-3 {
         border-radius: 15px 60px 15px 60px;
         border: solid 1.5px #1f1c1b;
       }
       .img-3 {
+        width: 348px;
+        height: 452px;
         border-radius: 15px 60px 15px 60px;
         border: solid 1.5px #1f1c1b;
-        margin-left: 37px;
-        margin-top: 22px;
+        margin-left: 840px;
+        margin-top: 50px;
       }
       .skill{
+        position: relative;
+        top: -550px;
         font-family:"pt serif", sans-serif ;
         font-style: italic;
-        font-size: 25px;
+        font-size: 48px;
         font-weight: 400;
       }
       .skilllist{
+        position: relative;
+        top: -550px;
         font-family: "montserrat";
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 400;
       }
       .line{
-        margin-top: 8px;
-        margin-bottom: 8px;
-        border-top:#1f1c1b solid 2px;
-        width: 328px;
+        
+        margin-top: 24px;
+        margin-bottom: 24px;
+        border-top:#1f1c1b solid 2.5px;
+        width: 1086px;
       }
       .language{
+        position: relative;
+        top: -550px;
         font-family:"pt serif", sans-serif ;
         font-style: italic;
-        font-size: 25px;
+        font-size: 48px;
         font-weight: 400;
       }
       .languagelist{
+        position: relative;
+        top: -550px;
         font-family: "montserrat";
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 400;
       }
        
       .portfolio-button{
+        position: relative;
+        top: -550px;
         font-family: "montserrat";
         font-weight: 400;
-        font-size: 20px;
-        width: 145px;
-        height: 40px;
-        padding: 8px 16px 8px 16px;
+        font-size: 30px;
+        width: 217px;
+        height: 68px;
+        padding: 16px 24px 16px 24px;
         border-radius: 70px;
         background-color: #686e5d;
         color: #eef0eb;
@@ -415,11 +428,16 @@ width: 1440px;
        }
     
       .brandingflowery1mobile{
-        
-        width: 315px;
-        height: 315px;
+        position: relative;
+        top: -550px;
+        border-radius: 25px 100px 25px 25px;
+        width: 396px;
+        height: 396px;
       }
       .brandingflowery2mobile{
+        position:relative ;
+        left: 430px;
+        top: -910px;
         border-radius: 40px;
         width: 315px;
         height: 329px;
@@ -429,7 +447,15 @@ width: 1440px;
       .year{
         font-size: 20px;
         margin-top: 24px;
+        position: relative;
+        
       }
+      .branding-flowery1{
+        position:relative;
+        top: -1060px;
+        left: 850px;
+      }
+    }
       .work{
         font-size: 20px;
       }
@@ -441,37 +467,88 @@ width: 1440px;
        
       }
       .brandingminimalmobile{
+        position: relative;
+        top: -900px;
+        left: 725px;
+        width: 539px;
+        height: 380px;
         border-radius: 100px 30px 30px 30px;
+      }
+      .branding-minimal{
+        position: relative;
+        top: -1050px;
+        left: 350px;
+        display: flex;
+        justify-content:flex-end;
+        flex-direction: column;
       }
       .brandingmuse1mobile{
         border-radius: 40px 40px 40px 140px;
+        width: 507px;
+        position: relative;
+        top: -900px;
+        left: 720px;
       }
       .brandingmuse2mobile{
         border-radius: 100px 25px 100px 25px;
         border:#1f1c1b solid 2px;
         margin-top: 15px;
+        position: relative;
+        top: -1300px;
+        left: 340px;
+      }
+      .branding-muse{
+        position: relative;
+        top: -1450px;
       }
       .redesignspotify1mobile{
         border-radius: 25px;
         border:#1f1c1b solid 2px;
         margin-bottom: 50px;
+        position: relative;
+        top: -1300px;
+        width: 458px;
       
       }
       .redesignspotify2mobile{
         border-radius: 100px 25px 100px 25px;
         border:#1f1c1b solid 2px;
+        position: relative;
+        top: -1600px;
+        left: 450px;
+      }
+      .branding-spotify{
+        position: relative;
+        top: -1750px;
+        left: 850px;
       }
       .uxuiappmobile{
+        position: relative;
+        top: -1600px;
+        left: 390px;
+        width: 551px;
         border-radius: 135px 25px 25px 25px;
         border:#1f1c1b solid 2px;
       }
+      .uiux-design{
+        position: relative;
+        top: -3000px;
+        left: 850px;
+     }
       .trifold1mobile{
         border-radius: 25px 25px 25px 100px;
         border:#1f1c1b solid 2px;
         margin-bottom: 32px;
+        position: relative;
+        top: -1580px;
+        left: 330px;
+        width: 553px;
       }
       .trifold2mobile{
         border-radius: 25px 70px 25px 150px;
+        position: relative;
+        top: -2000px;
+        left: 800px;
       }
       .isometricamobile{
         border-radius: 35px;
@@ -493,7 +570,7 @@ width: 1440px;
         color: #686e5d;
       }
   }
-}
+
 footer{
   display: flex;
   justify-content: center;
