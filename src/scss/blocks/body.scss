@@ -1,4 +1,5 @@
 @use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 
 html {
   scroll-behavior: smooth;
@@ -56,6 +57,12 @@ width: 1440px;
     border: 1.5px solid #1f1c1b;
     display: flex;
     flex-direction: column;
+    @include hover{
+      background-color: #686e5d;
+      border: none;
+      color: #eef0eb ;
+
+    }
   }
   .linkedin {
     width: 124px;
@@ -345,7 +352,7 @@ width: 1440px;
         top: -650px;
       }
       .img-1 {
-        margin-left: 963px;
+        margin-left: 800px;
        
         width: 299px;
         height: 389px;
@@ -358,7 +365,7 @@ width: 1440px;
         height: 392px;
         border-radius: 60px 15px 15px 15px;
         border: solid 1.5px #1f1c1b;
-        margin-left: 623px;
+        margin-left: 460px;
         margin-top: -100px;
       }
       .img-3 {
@@ -370,7 +377,7 @@ width: 1440px;
         height: 452px;
         border-radius: 15px 60px 15px 60px;
         border: solid 1.5px #1f1c1b;
-        margin-left: 840px;
+        margin-left: 750px;
         margin-top: 50px;
       }
       .skill{
@@ -532,7 +539,7 @@ width: 1440px;
       }
       .uiux-design{
         position: relative;
-        top: -3000px;
+        top: -2000px;
         left: 850px;
      }
       .trifold1mobile{
@@ -550,24 +557,25 @@ width: 1440px;
         top: -2000px;
         left: 800px;
       }
+      .trifold-design{
+        position: relative;
+        top: -2320px;
+      }
       .isometricamobile{
+        position: relative;
+        top: -1900px;
+        width: 673px;
+        left: 350px;
         border-radius: 35px;
         border:#1f1c1b solid 2px;
       }
-      .start-text{
+      .isometric-design{
         position: relative;
-        top: 30px;
-        color: #686e5d;
-        font-size: 15PX;
+        top: -2045px;
+        left: 850px;
       }
-      .contact{
-        position: relative;
-        top: 30px;
-        left: 30px;
-        font-family:"pt serif", sans-serif  ;
-        font-size: 47px;
-        font-style: italic;
-        color: #686e5d;
+      .contactme{
+        visibility: hidden;
       }
   }
 
@@ -614,6 +622,56 @@ footer{
   .message{
     color: #eef0eb;
     font-size: 24px;
+  }
+  @include responsive(laptop){
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -1800px;
+  width: 1440px;
+  height: 708px;
+  background-color: #686e5d;
+
+  .avatar{
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+  }
+  .links-footer{
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .links{
+    font-size: 16px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 70px;
+    border: 2px solid #eef0eb;
+    display: flex;
+    flex-direction: column;
+    color: #eef0eb;
+    margin: 24px;
+    text-align:center ;
+    @include hover{
+      background-color: #eef0eb;
+      color: #686e5d;
+      border: none;
+    }
+  }
+  .social-media{
+    color: #eef0eb;
+    font-size: 24px;
+  }
+  .mail{
+    color: #eef0eb;
+    font-size: 20px;
+  }
+  .message{
+    color: #eef0eb;
+    font-size: 24px;
+  }
   }
 }
 
